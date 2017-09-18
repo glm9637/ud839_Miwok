@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:background="@color/tan_background"
+              android:layout_height="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="match_parent"
+        android:contentDescription="Visualises the Word."/>
+
+    <RelativeLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height">
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:id="@+id/miwok_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="bottom"
+            tools:text="lutti"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:id="@+id/default_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="top"
+            tools:text="one"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:id="@+id/play_icon"
+        android:src="@drawable/ic_play_arrow_white"
+        android:layout_width="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
